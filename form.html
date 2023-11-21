@@ -8,17 +8,24 @@
   <body>
     <form>
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" required /><br>
+      <input type="email" name="email" id="email" required /><br />
       <label for="password">Password</label>
-      <input type="password" name="password" id="password" required /><br>
+      <input type="password" name="password" id="password" required /><br />
       <label for="lastName">Last Name</label>
-      <input type="text" name="lasName" id="lastName" required /><br>
+      <input type="text" name="lasName" id="lastName" required /><br />
       <label for="firstname">firstname</label>
-      <input type="text" name="firstname" id="firstname" required /><br>
+      <input type="text" name="firstname" id="firstname" required /><br />
       <label for="date">Date of birth</label>
-      <input type="date" name="date" id="date" required /> <br>
+      <input type="date" name="date" id="date" required /> <br />
       <label for="tlf">Telefono</label>
-      <input type="tel" name="tlf" id="tlf" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"> <br>
+      <input
+        type="tel"
+        name="tlf"
+        id="tlf"
+        required
+        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+      />
+      <br />
 
       <label for="plans">Select your plan</label>
       <select name="plans" id="plans">
@@ -32,20 +39,13 @@
       <label for="planpro">Plan Pro 150$</label>
       <input type="checkbox" name="checkbox" id="planpro" value="" />
 
+      <div>
+        <h4 class="title">Credit card detail</h4>
+      </div>
 
+      <div>
+        <input type="text" name="card-number" placeholder="Card Number" />
 
-        <form class="credit-card">
-  <div class="form-header">
-    <h4 class="title">Credit card detail</h4>
-  </div>
- 
-  <div class="form-body">
-    <!-- Card Number -->
-    <input type="text" class="card-number" placeholder="Card Number">
- 
-    <!-- Date Field -->
-    <div class="date-field">
-      <div class="month">
         <select name="Month">
           <option value="january">January</option>
           <option value="february">February</option>
@@ -61,7 +61,7 @@
           <option value="december">December</option>
         </select>
       </div>
-      <div class="year">
+      <div>
         <select name="Year">
           <option value="2016">2016</option>
           <option value="2017">2017</option>
@@ -74,18 +74,11 @@
           <option value="2024">2024</option>
         </select>
       </div>
-    </div>
- 
-    <!-- Card Verification Field -->
-    <div class="card-verification">
-      <div class="cvv-input">
-        <input type="text" placeholder="CVV">
+
+      <div>
+        <input type="text" placeholder="CVV" />
       </div>
-      <div class="cvv-details">
-    
-      </div>
-    </div>
-    
+
       <button type="submit">enviar</button>
     </form>
   </body>
